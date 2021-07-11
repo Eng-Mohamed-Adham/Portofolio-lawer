@@ -1,0 +1,33 @@
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+   
+    @media #{$minSmall}{
+        width: 750px;
+        padding: 0;
+        margin: 0;
+    }
+    @media #{$minMedium}{
+        width: 970px;
+    }
+    @media #{$minLarge}{
+        width: 1170px;
+    }
+    @media#{$maxMobile}{
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+}
+*{
+    @media#{$maxMobile}{
+        padding-right:0;
+    margin-right:0;
+    padding-left: 0;
+    }
+}
+#dark{
+    background-color: #000000fa;
+}

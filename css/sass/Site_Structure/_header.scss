@@ -1,0 +1,109 @@
+
+
+      .visible{
+          @media#{$maxMobile}{
+              text-align: center;
+              z-index: 1;
+              height: 200px;
+              background-color: #5ac1fc;
+              transition: .3s ease-in-out;
+              border-radius: 110px;
+              li{
+                  margin-bottom: 30px;
+                 
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+          }
+
+      }
+ 
+
+
+
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    .grid-header{
+        
+        @media #{$minSmall}{
+            display: block;
+            text-align: center;
+        }
+        @media #{$minMedium}{
+            display: grid;
+        grid-template-columns: repeat(10,auto);
+        grid-template-rows: auto;
+        gap: 10px;
+        text-align:left;
+        }
+       
+        .logo{
+            position: relative;
+            grid-column: span 3;
+           text-align: center;
+           
+            h2{
+                margin-bottom: 0;
+                margin-top: 10px;
+                color: $mainColor;
+
+            }
+            p{color: $secondColor;}
+            .button{
+                display: none;
+                background-color:$mainColor;
+                width: 10px;
+                height: 10px;
+                @media #{$maxMobile}{
+                    display: block;
+                    min-width: 45px;
+                    min-height: 40px;
+                    background: $mainColor;
+                    border-radius: 25px;
+                    margin-top: 8px;
+                    position: absolute;
+                    top: 60px;
+                    left: 0px;
+                   
+                }
+            }
+        }
+        .nav{
+            grid-column: span 6;
+            background-color: $mainColor;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: auto;
+            @media #{$maxMobile}{
+                display: none;
+                border-radius: 0;
+              
+            }
+            
+        li{
+            font-size: 18px;
+            text-align: center;
+            grid-column: span 1;
+            a{
+                color: #FFF;
+                display: block;
+                padding: 20px 10px;
+                text-decoration: none;
+                &:hover{
+                    color: $secondColor;
+                   
+                }
+            }
+            @media #{$maxMobile} {
+                display: block;   
+                text-align: center;
+            }
+        }
+        }
+    }
+    
+}

@@ -1,0 +1,33 @@
+.footer{
+    padding: 20px;
+    h4{
+        color: $mainColor;
+        display: block;
+        text-align: center;
+    }
+    .socail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: $mainColor;
+        }
+       
+       
+    }
+    .copyright{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        color: $mainColor;
+        @media#{$maxMobile}{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        
+
+    }
+}

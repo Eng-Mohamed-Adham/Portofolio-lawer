@@ -1,0 +1,17 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+h3{
+    font-size: 40px;
+    margin-left: 10px;
+    letter-spacing: 2.3px;
+    color: $mainColor;
+}
+i{color:$mainColor;}
+li{
+    list-style: none;
+}
